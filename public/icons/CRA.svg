@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="101.58599mm"
+   height="109.72671mm"
+   viewBox="0 0 101.58599 109.72671"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="Government of Canada (Favicon).svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.64052329"
+     inkscape:cx="149.09684"
+     inkscape:cy="260.72432"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5718">
+      <stop
+         style="stop-color:#b4090d;stop-opacity:1"
+         offset="0"
+         id="stop5714" />
+      <stop
+         style="stop-color:#c7484b;stop-opacity:1"
+         offset="1"
+         id="stop5716" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5718"
+       id="linearGradient5720"
+       x1="197.65846"
+       y1="122.08854"
+       x2="218.66927"
+       y2="90.340096"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.2526299,0,0,2.2526299,-356.18409,-110.26775)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-65.693792,-79.385602)">
+    <path
+       d="m 116.48479,79.385602 -8.87145,16.548475 c -1.00667,1.798542 -2.81031,1.631735 -4.61392,0.627176 l -6.42271,-3.326212 4.78692,25.418159 c 1.0067,4.64373 -2.223109,4.64373 -3.817068,2.63586 l -11.208859,-12.54975 -1.819752,6.37306 c -0.209943,0.83698 -1.132502,1.71594 -2.51671,1.50664 l -14.173748,-2.98047 3.722869,13.53648 c 0.796947,3.01202 1.418577,4.25911 -0.804567,5.05351 l -5.052003,2.37467 24.399155,19.82128 c 0.965737,0.74949 1.453654,2.09821 1.1099,3.31938 l -2.135469,7.00872 c 8.400962,-0.96854 15.932832,-1.83538 24.333632,-2.80273 0.74647,-0.01 1.98423,0.62517 1.97915,1.48523 l -1.11314,25.67723 h 4.08462 l -0.64297,-25.62219 c -0.003,-0.85999 1.11739,-1.54956 1.86386,-1.54027 8.40083,0.96735 15.9327,1.83419 24.33366,2.80273 l -2.13543,-7.00872 c -0.34379,-1.22117 0.14371,-2.56989 1.10986,-3.31938 l 24.39916,-19.82128 -5.05201,-2.37467 c -2.22314,-0.7944 -1.60151,-2.04149 -0.80456,-5.05351 l 3.72287,-13.53648 -14.17378,2.98047 c -1.38418,0.2093 -2.3069,-0.66966 -2.51671,-1.50664 l -1.81972,-6.37306 -11.20886,12.54975 c -1.59396,2.00787 -4.82377,2.00787 -3.81707,-2.63586 l 4.78689,-25.418159 -6.42271,3.326212 c -1.80361,1.004559 -3.60722,1.171366 -4.61389,-0.627176"
+       id="maple_leaf"
+       style="fill:url(#linearGradient5720);fill-opacity:1;stroke-width:0.0413983" />
+  </g>
+</svg>
