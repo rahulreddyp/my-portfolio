@@ -1,4 +1,4 @@
-import { GitlabIcon as GitHub, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import { portfolioData } from "@/data/portfolioData"
 
 export default function Footer() {
@@ -15,7 +15,7 @@ export default function Footer() {
           </div>
           <div className="flex space-x-4">
             <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200">
-              <GitHub className="w-6 h-6" />
+              <Github className="w-6 h-6" />
             </a>
             <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200">
               <Linkedin className="w-6 h-6" />
