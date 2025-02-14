@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react"
+import { ArrowDown } from "lucide-react"
 import { motion } from "framer-motion"
 import { portfolioData } from "@/data/portfolioData"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
@@ -30,8 +30,29 @@ const CodeIcon = () => (
   </svg>
 )
 
+const SocialIcon = ({ href, label, children }: any) => (
+  <TooltipProvider>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <a
+          href={href}
+          className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-300 shadow-lg hover:shadow-xl"
+          aria-label={label}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {children}
+        </a>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>{label}</p>
+      </TooltipContent>
+    </Tooltip>
+  </TooltipProvider>
+)
+
 export default function Hero() {
-  const { name, role, bio, email, profileImage } = portfolioData.personalInfo
+  const { name, role, bio, email, profileImage, socialLinks } = portfolioData.personalInfo
 
   return (
     <section
@@ -42,7 +63,7 @@ export default function Hero() {
         <CodePattern />
       </div>
       <div className="absolute inset-0 z-0 opacity-20 bg-gradient-to-br from-blue-400 to-purple-500"></div>
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 py-12">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <motion.div
             className="lg:w-1/2 text-center lg:text-left"
@@ -57,54 +78,25 @@ export default function Hero() {
             </div>
             <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">{bio}</p>
             <div className="flex justify-center lg:justify-start space-x-4 mb-8">
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a
-                      href="#"
-                      className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-300 shadow-lg hover:shadow-xl"
-                      aria-label="GitHub Profile"
-                    >
-                      <Github className="w-6 h-6 text-blue-600" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>GitHub Profile</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a
-                      href="#"
-                      className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-300 shadow-lg hover:shadow-xl"
-                      aria-label="LinkedIn Profile"
-                    >
-                      <Linkedin className="w-6 h-6 text-blue-600" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>LinkedIn Profile</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <a
-                      href={`mailto:${email}`}
-                      className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors duration-300 shadow-lg hover:shadow-xl"
-                      aria-label="Email Contact"
-                    >
-                      <Mail className="w-6 h-6 text-blue-600" />
-                    </a>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>Email Me</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+            {socialLinks.map((link, index) => (
+                <SocialIcon key={index} href={link.url} label={link.name}>
+                  <span className="sr-only">{link.name}</span>
+                  <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fillRule="evenodd" d={link.iconPath} clipRule="evenodd" />
+                  </svg>
+                </SocialIcon>
+              ))}
+              <SocialIcon href={`mailto:${email}`} label="Email Me">
+                <span className="sr-only">Email</span>
+                <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+              </SocialIcon>
             </div>
             <motion.button
               onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}

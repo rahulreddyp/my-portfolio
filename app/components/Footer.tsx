@@ -1,8 +1,21 @@
-import { Github, Linkedin, Mail } from "lucide-react"
 import { portfolioData } from "@/data/portfolioData"
 
+const SocialIcon = ({ href, label, iconPath }: any) => (
+  <a
+    href={href}
+    className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
+    aria-label={label}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path fillRule="evenodd" d={iconPath} clipRule="evenodd" />
+    </svg>
+  </a>
+)
+
 export default function Footer() {
-  const { name, email } = portfolioData.personalInfo
+  const { name, email, socialLinks } = portfolioData.personalInfo
   const currentYear = new Date().getFullYear()
 
   return (
@@ -11,21 +24,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-blue-600 dark:text-blue-400">{name}</h2>
-            <p className="text-sm mt-1">Full Stack Developer</p>
+            <p className="text-sm mt-1">MERN Stack Developer</p>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200">
-              <Github className="w-6 h-6" />
-            </a>
-            <a href="#" className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200">
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a
-              href={`mailto:${email}`}
-              className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200"
-            >
-              <Mail className="w-6 h-6" />
-            </a>
+            {socialLinks.map((link, index) => (
+              <SocialIcon key={index} href={link.url} label={link.name} iconPath={link.iconPath} />
+            ))}
           </div>
         </div>
         
