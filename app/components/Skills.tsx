@@ -73,7 +73,7 @@ export default function Skills() {
     >
       <BackgroundPattern />
       <div className="container mx-auto px-6 relative z-10">
-        <AnimatedSectionHeader title="Skills & Tools" />
+        <AnimatedSectionHeader title="Essential Technologies" />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {skills.map((skill, index) => {
             const IconComponent = iconMap[skill.icon.toLowerCase()] || FaBolt
