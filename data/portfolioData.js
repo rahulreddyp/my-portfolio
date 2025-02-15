@@ -113,14 +113,14 @@ export const portfolioData = {
     {
       title: "SafeDeposit - cloud plumbing system",
       description: "A serverless, scalable, on-demand data processing application leveraging a multi-cloud Backend-as-a-Service model.",
-      image: "/projects/task-manager.jpg",
+      image: "/SafeDeposit.jpg",
       tags: ["AWS", "DynamoDB", "Lambda", "GCP Firebase"],
       githubLink: "https://github.com/rahulreddyp/safe-deposit-cloud-plumbing-system",
     },
     {
       title: "Analysis of customer spending pattern",
       description: "A customer spending analysis made using Machine Learning models, by creating data-driven dashboards for insights on products, marketing, and purchasing.",
-      image: "/projects/weather-dashboard.jpg",
+      image: "/VisualAnalytics.jpg",
       tags: ["Python", "NumPy", "Matplotlib", "Plotly", "Slearn"],
       githubLink: "https://github.com/rahulreddyp/analysis-of-customer-behaviour-pattern",
     },
