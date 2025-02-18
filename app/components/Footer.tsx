@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h2 className="text-2xl font-bold text-blue-600 dark:text-blue-400">{name}</h2>
-            <p className="text-sm mt-1">MERN Stack Developer</p>
+            <p className="text-sm mt-1">Full Stack Developer</p>
           </div>
           <div className="flex space-x-4">
             {socialLinks.map((link, index) => (
