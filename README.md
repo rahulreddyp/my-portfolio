@@ -29,9 +29,6 @@ my-portfolio/
 │   ├── contact/          # Contact form & links
 │   └── layout.tsx        # Main layout
 ├── components/           # Reusable UI components
-│   ├── Header.tsx        # Navigation bar
-│   ├── Footer.tsx        # Footer section
-│   ├── ProjectCard.tsx   # Individual project card
 ├── public/               # Static assets (images, icons)
 ├── styles/               # Global styles (Tailwind)
 ├── package.json          # Dependencies and scripts
