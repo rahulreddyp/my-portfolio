@@ -18,6 +18,26 @@ Welcome to my **Next.js** and **Tailwind CSS** powered **Developer Portfolio**! 
 - **Deployment:** Vercel
 - **Version Control:** GitHub
 
+## Project Structure
+
+```bash
+my-portfolio/
+├── app/                  # Next.js App Router pages
+│   ├── about/            # About section
+│   ├── experience/       # Work experience
+│   ├── projects/         # List of projects
+│   ├── contact/          # Contact form & links
+│   └── layout.tsx        # Main layout
+├── components/           # Reusable UI components
+│   ├── Header.tsx        # Navigation bar
+│   ├── Footer.tsx        # Footer section
+│   ├── ProjectCard.tsx   # Individual project card
+├── public/               # Static assets (images, icons)
+├── styles/               # Global styles (Tailwind)
+├── package.json          # Dependencies and scripts
+└── tsconfig.json         # TypeScript configuration
+```
+
 ## 🌍 Live Demo
 
 Check out the live portfolio: [Link](https://rahulreddyp.vercel.app)
