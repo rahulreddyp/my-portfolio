@@ -20,6 +20,6 @@ Welcome to my **Next.js** and **Tailwind CSS** powered **Developer Portfolio**! 
 
 ## 🌍 Live Demo
 
-Check out the live portfolio: [Portfolio Link](https://rahulreddyp.vercel.app]
+Check out the live portfolio: [Link](https://rahulreddyp.vercel.app)
 
 📌 Feel free to fork this project and customize it to your needs! Happy coding! 😊
