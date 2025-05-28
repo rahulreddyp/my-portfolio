@@ -72,14 +72,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <a
-            href="/RahulReddy_Puchakayala_Resume.pdf"
-            download
-            className="mt-4 md:mt-0 md:ml-6 flex items-center justify-center text-white bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-2 rounded-full"
-          >
-            <Download className="w-5 h-5 mr-2" />
-            Resume
-          </a>
+          
         </nav>
       </div>
     </header>
