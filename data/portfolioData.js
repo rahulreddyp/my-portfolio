@@ -2,7 +2,7 @@ export const portfolioData = {
   personalInfo: {
     name: "Rahul Reddy Puchakayala",
     role: "Full Stack Developer",
-    bio: "Crafting exceptional digital experiences with modern web technologies. Specialized in building scalable full-stack applications with 4.5 years of experience.",
+    bio: "Crafting exceptional digital experiences with modern web technologies. Specialized in building scalable full-stack applications with 5.5 years of experience.",
     email: "rahulreddyp77@gmail.com",
     profileImage: "/profile.jpg",
     socialLinks: [
@@ -39,9 +39,22 @@ export const portfolioData = {
   ],
   experiences: [
     {
+      company: "Amazon Web Services (AWS)",
+      location: "Vancouver, Canada",
+      period: "June 2025 - Present",
+      role: "Full Stack Engineer",
+      responsibilities: [
+        "Migrated Partner Central from Salesforce to AWS by building synchronization flows using EventBridge, SQS, StepFunctions, and ECS.",
+        "Developed Salesforce to AWS integrations using JWT OAuth, Named Credentials, Roles Anywhere, and asynchronous queueable jobs.",
+        "Led development of micro-frontend applications using React and AWS Cloudscape, enhancing modularity and reusability across platforms.",
+        "Identified technical risks early, authored HLD, LLD, threat models, and implemented mitigation strategies to ensure smooth process flow"
+      ],
+      icon: "/icons/AWS.svg",
+    },
+    {
       company: "Canada Revenue Agency",
-      location: "Vancouver, Canada (remote)",
-      period: "November 2023 - Present",
+      location: "Vancouver, Canada (Hybrid)",
+      period: "November 2023 - June 2025",
       role: "Software Developer 2",
       responsibilities: [
         "Developing custom web application features for international clients.",
