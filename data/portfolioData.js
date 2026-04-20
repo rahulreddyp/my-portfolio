@@ -1,9 +1,9 @@
 export const portfolioData = {
   personalInfo: {
-    name: "Rahul Reddy Puchakayala",
+    name: "Rahul",
     role: "Full Stack Developer",
     bio: "Crafting exceptional digital experiences with modern web technologies. Specialized in building scalable full-stack applications with 5.5 years of experience.",
-    email: "rahulreddyp77@gmail.com",
+    email: "hinges.mounds4q@icloud.com",
     profileImage: "/profile.jpg",
     socialLinks: [
       {
@@ -39,7 +39,7 @@ export const portfolioData = {
   ],
   experiences: [
     {
-      company: "Amazon Web Services (AWS)",
+      company: "Deloitte - Amazon Web Services (AWS)",
       location: "Vancouver, Canada",
       period: "June 2025 - Present",
       role: "Full Stack Engineer",
@@ -78,7 +78,7 @@ export const portfolioData = {
       icon: "/icons/CRA.svg",
     },
     {
-      company: "Uangteman Technologies Private Limited",
+      company: "Uangteman",
       location: "Hyderabad, India",
       period: "June 2019 - December 2020",
       role: "Software Developer",
